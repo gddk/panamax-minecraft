@@ -1,0 +1,31 @@
+---
+name: minecraft
+description: itzg/minecraft-server turned into a panamax template
+keywords: ''
+type: Default
+documentation: |-
+  # minecraft
+
+  itzg/minecraft-server turned into a panamax template
+
+  ## System Requirements
+
+  Not sure yet
+
+  ## Setup
+
+  Not sure yet
+
+  ## Post-Run Instructions
+
+  Not sure yet
+
+  ## Resources
+
+  * [https://hub.docker.com/r/itzg/minecraft-server/](https://hub.docker.com/r/itzg/minecraft-server/)
+  * [http://panamax.io/](http://panamax.io/)
+images:
+- name: itzg_minecraft-server_latest
+  source: itzg/minecraft-server:latest
+  category: Minecraft
+  type: Default
