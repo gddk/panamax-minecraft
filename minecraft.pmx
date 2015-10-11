@@ -1,7 +1,7 @@
 ---
 name: minecraft
 description: itzg/minecraft-server turned into a panamax template
-keywords: ''
+keywords: 'minecraft'
 type: Default
 documentation: |-
   # minecraft
@@ -29,3 +29,9 @@ images:
   source: itzg/minecraft-server:latest
   category: Minecraft
   type: Default
+  environment:
+    - variable: EULA
+      value: TRUE
+  ports:
+  - host_port: 25565
+    container_port: 25565
