@@ -1,7 +1,7 @@
 ---
 name: minecraft
 description: itzg/minecraft-server turned into a panamax template
-keywords: 'minecraft'
+keywords: minecraft
 type: Default
 documentation: |-
   # minecraft
@@ -45,9 +45,9 @@ images:
     - variable: LEVEL
       value: myworld
     - variable: JVM_OPTS
-      value: '-Xmx1024M -Xms1024M'
+      value: -Xmx1024M -Xms1024M
     - variable: MOTD
       value: 'Welcome to My World'
   ports:
-    - host_port: 25565
-      container_port: 25565
+  - host_port: 25565
+    container_port: 25565
