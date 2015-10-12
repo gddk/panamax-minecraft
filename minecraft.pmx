@@ -25,13 +25,29 @@ documentation: |-
   * [https://hub.docker.com/r/itzg/minecraft-server/](https://hub.docker.com/r/itzg/minecraft-server/)
   * [http://panamax.io/](http://panamax.io/)
 images:
-- name: itzg_minecraft-server_latest
+- name: mc
   source: itzg/minecraft-server:latest
   category: Minecraft
   type: Default
   environment:
     - variable: EULA
       value: TRUE
+    - variable: mode
+      value: creative
+    - variable: difficulty
+      value: normal
+    - variable: SEED
+      value: 4782852850420491972
+    - variable: PVP
+      value: false
+    - variable: LEVEL_TYPE
+      value: default
+    - variable: LEVEL
+      value: myworld
+    - variable: JVM_OPTS
+      value: '-Xmx1024M -Xms1024M'
+    - variable: MOTD
+      value: 'Welcome to My World'
   ports:
   - host_port: 25565
     container_port: 25565
