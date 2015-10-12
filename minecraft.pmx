@@ -49,5 +49,5 @@ images:
     - variable: MOTD
       value: 'Welcome to My World'
   ports:
-  - host_port: 25565
-    container_port: 25565
+    - host_port: 25565
+      container_port: 25565
